@@ -64,12 +64,13 @@ To use this theme you will first need to have Hugo installed. Please follow the 
 
 This theme uses [Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) to compile SCSS and minify assets which means if you not using the Hugo extended version this theme will not work. To check your version of Hugo, run  `hugo version`. Make sure you see __/extended__ after the version number, for example _Hugo Static Site Generator v0.82.0/extended darwin/amd64 BuildDate: unknown_ You do not need to use version v0.82.0 specifically, it just needs to have the _/extended_ part.
 
-**2. Create a new Hugo site**
+**2. Create a new Hugo site folder**
 
-This will create a fresh Hugo site in the folder `mynewsite`.
+This will create a folder to hold a Hugo site in the folder `mynewsite`.
 
 ```
-hugo new site mynewsite
+mkdir mynewsite
+cd mynewsite
 ```
 
 **3. Install the theme**
@@ -77,7 +78,6 @@ hugo new site mynewsite
 Download or git clone this theme into the sites themes folder `mynewsite/themes`. You should end up with the following folder structure `mynewsite/themes/hugo-hero-theme`
 
 ```
-cd mynewsite
 git clone https://github.com/zerostaticthemes/hugo-hero-theme.git themes/hugo-hero-theme
 ```
 
