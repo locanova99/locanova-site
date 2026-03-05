@@ -2,12 +2,14 @@ baseURL = "https://www.example.com/"
 languageCode = "en-us"
 title = "Hugo Hero Theme"
 
-
 [module]
   [module.hugoVersion]
     extended = true
     min = "0.92.0"
-    
+
+  [[module.imports]]
+    path = "github.com/zerostaticthemes/hugo-hero-theme"
+
 [params]
   google_analytics_id=""
 
@@ -32,33 +34,30 @@ title = "Hugo Hero Theme"
     meta_twitter_creator = "@zerostaticio"
 
 [[menu.main]]
-	name = "Services"
-	url = "/services/"
-    weight = 1
+  name = "Services"
+  url = "/services/"
+  weight = 1
 
 [[menu.main]]
-    name = "Work"
-    url = "/work/"
-    weight = 2
+  name = "Work"
+  url = "/work/"
+  weight = 2
 
 [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 3
+  name = "About"
+  url = "/about/"
+  weight = 3
 
 [[menu.main]]
-    name = "History"
-    url = "/history/"
-    weight = 3
+  name = "History"
+  url = "/history/"
+  weight = 3
 
 [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    weight = 4
+  name = "Contact"
+  url = "/contact/"
+  weight = 4
 
 [permalinks]
   post = "/:year/:month/:day/:slug/"
   pages = "/:filename/"
-  [module]
-[[module.imports]]
-path = "github.com/zerostaticthemes/hugo-hero-theme"
